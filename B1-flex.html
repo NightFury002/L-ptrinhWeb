@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Center this Div</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #87CEFA;
+            }
+            .outer-div{
+                width: 500px;
+                height: 300px;
+                background-color: #00f;
+                border: 5px solid #000080; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .inner-div {
+                width: 100px;
+                height: 100px;
+                background-color: #ff9999; /* pink background */
+                border: 5px solid #8B0000; /* dark red border */
+                text-align: start;
+                line-height: 30px; /* vertically centers the text */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer-div">
+            <div class="inner-div">
+                center this div
+            </div>
+        </div>
+    </body>
+</html>
